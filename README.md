@@ -1,2 +1,2 @@
 # the_super_downloader
-The super downloader
+The definitive social media content downloader
