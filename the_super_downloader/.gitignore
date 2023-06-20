@@ -1,0 +1,6 @@
+#Caca
+
+*.log
+*.sqlite3
+
+the_super_downloader/settings.py
