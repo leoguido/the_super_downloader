@@ -1,0 +1,82 @@
+:root {
+    --palette-dark: rgb(4, 28, 50);
+    --palette-opaque: rgb(4, 41, 58); 
+    --palette-light: rgb(6, 70, 99);
+    --palette-contrast: rgb(236, 179, 101);
+ 
+    --fonts-main: 'Montserrat', sans-serif;
+}
+
+
+.container {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+.container-title {
+    color: var(--palette-contrast);
+    font-family: var(--fonts-main);
+    font-weight: 800;
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.container-searchbar {
+    box-sizing: border-box;
+    width: 19rem;
+    padding: 16px 10px;
+
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+
+    font-family: var(--fonts-main);
+    font-weight: 300;
+    font-size: 0.70rem;
+}
+
+.container-subtitle {
+    color: var(--palette-contrast);
+    font-family: var(--fonts-main);
+    font-weight: 400;
+    font-size: 0.70rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media (min-width: 728px) {
+   
+    .container-title{
+        font-size: 0.95rem;
+    }
+
+    .container-searchbar {
+        width: 28rem;
+        font-size: 0.90rem;
+    }
+
+    .container-subtitle {
+        font-size: 0.90rem;
+    }
+ 
+ }
+ 
+ @media (min-width: 1200px) {
+    
+    .container-title{
+        font-size: 1rem;
+    }
+
+    .container-searchbar {
+        width: 40rem;
+        font-size: 0.95rem;
+    }
+
+
+    .container-subtitle {
+        font-size: 0.95rem;
+    }
+ 
+ }
