@@ -1,0 +1,64 @@
+:root {
+   --palette-dark: rgb(4, 28, 50);
+   --palette-opaque: rgb(4, 41, 58); 
+   --palette-light: rgb(6, 70, 99);
+   --palette-contrast: rgb(236, 179, 101);
+
+   --fonts-main: 'Montserrat', sans-serif;
+ }
+
+body {
+   background-color: var(--palette-dark); 
+   border: none; /* o border: 0; */
+   margin: 0;
+   padding: 0;
+}
+
+.header{
+   background-color: var(--palette-opaque);
+   padding: 1rem 0;
+
+   position: relative;
+}
+
+.header-title{
+   color: var(--palette-contrast);
+   font-family: var(--fonts-main);
+   font-weight: 800;
+   font-size: 1rem;
+   text-align: center;
+   text-transform: uppercase;
+}
+
+.header-menuicon{
+   width: 1.5rem;
+   position: absolute;
+   top: 50%;
+   left: 2%;
+   transform: translate(-2%, -50%);
+   cursor: pointer;
+}
+
+@media (min-width: 728px) {
+   
+   .header-title{
+      font-size: 2rem;
+   }
+
+   .header-menuicon{
+      width: 2rem;
+   }
+
+}
+
+@media (min-width: 1200px) {
+   
+   .header-title{
+      font-size: 3rem;
+   }
+
+   .header-menuicon{
+      width: 3rem;
+   }
+
+}

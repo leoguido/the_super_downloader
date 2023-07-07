@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+    <link rel="preconnect" href="{% static 'css/download.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/download.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h3 class="container-title">Paste the link below</h3>
+        <input type="text" id="searchbar" class="container-searchbar" placeholder="Link here...">
+        <h4 class="container-subtitle">Supported platforms</h4>
+    </div>
+{% endblock %}
