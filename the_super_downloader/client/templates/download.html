@@ -9,7 +9,16 @@
 {% block content %}
     <div class="container">
         <h3 class="container-title">Paste the link below</h3>
-        <input type="text" id="searchbar" class="container-searchbar" placeholder="Link here...">
+        <div class="container-searchbar_container">
+            <input type="text" id="searchbar" class="container-searchbar" placeholder="Link here...">
+            <button id="send" class="container-send">Download</button>
+        </div>
+        
         <h4 class="container-subtitle">Supported platforms</h4>
+        <div class="container-logos_container">
+            <img src="{% static 'icon/twitter_logo.svg' %}" class="container-twitter_icon">
+            <img src="{% static 'icon/youtube_logo.svg' %}" class="container-twitter_icon">
+        </div>
+        
     </div>
 {% endblock %}
